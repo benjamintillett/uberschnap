@@ -4,11 +4,113 @@
   <title>Uberschnap</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>  
 </head>
 <body>
+  <div class="container">  
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="nav-color" role="navigation">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div id="nav-content">
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/static_pages/home"><img id="uber-logo" src="https://s3.amazonaws.com/uberschnapbucket1/Uberschnap-logo.png"><br><img id="photo-logo" src="https://s3.amazonaws.com/uberschnapbucket1/Uberschnap-20.png"> </a>
+	  </div>
 
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav navbar-right">
+		  
+		  <li class="active"><a href="/static_pages/photo_booth">photo booths</a></li>
+		  <li><a href="/static_pages/private_party">private party</a></li>
+		  <li><a href="/static_pages/wedding">wedding</a></li>
+		  <li><a href="/static_pages/corporate_event">corporate event</a></li>
+		  <li><a href="/static_pages/about">about</a></li>
+		  <li><a href="/static_pages/bookings">bookings</a></li>
+		  <li><i class="fa fa-facebook fa-2x"></i></li>
+		  <li><i class="fa fa-twitter fa-2x"></i></li>
+		  <li><i class="fa fa-instagram fa-2x"></i></li>
+		</ul>
+	  </div><!-- /.navbar-collapse -->
+	 </div>							
+  	</nav>	
+
+<div id="wrap">   	
 <%= yield %>
+</div>
+
+</div>
+<!-- FOOTER -->
+ <footer class = "clearfix">
+	<div class = "container">
+		<div class="col-md-2 col-sm-4">
+			  <h4><i class="fa fa-camera icon-inline"></i> Products</h4>
+				<nav>
+				  <ul class="quick-links">
+					<li><a href="product.html">Product1</a></li>
+					<li><a href="product.html">Product2</a></li>
+					<li><a href="product.html">Product3</a></li>
+					<li><a href="all_products.html">All products</a></li>
+				  </ul>
+				</nav>
+		</div>
+		<div class="col-md-2 col-sm-4">
+            <h4><i class="icon-beaker icon-white"></i> About</h4>
+            <nav>
+              <ul class="quick-links">
+                <li><a href="our_works.html">Our works</a></li>
+                <li><a href="patnerships.html">Patnerships</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="news.html">News</a></li>
+              <ul>
+            </nav>
+        </div>
+		<div class="col-md-2 col-sm-4">
+            <h4><i class="icon-thumbs-up icon-white"></i> Services</h4>
+            <nav>
+              <ul class="quick-links">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>            
+              </ul>
+            </nav>          
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <h4><i class="icon-thumbs-up icon-white"></i> Support</h4>
+            <nav>
+              <ul class="quick-links">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>            
+              </ul>
+            </nav> 
+        </div>
+        <div class="col-md-4 col-sm-8">         
+       		<h4><i class="icon-legal icon-white"></i>Get in touch</h4>
+            <nav>
+              <ul class="quick-links">
+		 		<li><i class="fa fa-facebook fa-2x"></i><i class="fa fa-twitter fa-2x"></i><i class="fa fa-instagram fa-2x"></i></li>
+		  		<li></li>
+		  		<li></li>     
+              </ul>
+            </nav>   
+        </div>
+        
+        
+        
+	
+	
+	</div>
+	<hr class="footer-divider">
+      <div class="container">
+        <p>
+          &copy; 2012-3000 Bootbusiness, Inc. All Rights Reserved.
+        </p>
+      </div>
+ </footer>
+
 
 </body>
 </html>

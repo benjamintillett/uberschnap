@@ -1,0 +1,144 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+#carasoul-control-right {
+right: 0;
+left: auto;
+}
+#nav-content {
+	width:80%;	
+	margin:auto;
+}
+
+body {
+	font-size:13px;
+	background: url("https://s3.amazonaws.com/uberschnapbucket1/Uberschnap-04.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color: #eBeBeB;
+	font-family: “Avant Garde”, Avantgarde, “Century Gothic”, CenturyGothic, “AppleGothic”, sans-serif;
+	margin-top:120px;
+
+}
+h1 {
+	font-family: “Avant Garde”, Avantgarde, “Century Gothic”, CenturyGothic, “AppleGothic”, sans-serif;
+	font-weight:900;
+}
+
+
+#uber-logo {
+
+	
+	width:10em;
+	display: inline-block;
+}
+#photo-logo {
+	width:6em;
+	display: inline-block;
+	float:right;
+}
+.navbar-nav {
+margin-top:20px;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+	text-align:centre;
+}
+
+a {
+ color: #B24EC6;
+}
+.nav-header h3 { 
+	padding-left:10px;
+	margin-top:10px	
+}
+.fa{
+    color: #fff;
+    margin:15px;
+}
+footer {
+	background-color:#000;
+	color:#fff;
+}
+footer h4 {
+	color:#B24EC6;
+
+}
+.quick-links {
+  list-style: none;
+}
+.quick-links > li {
+  line-height: 30px;
+}
+.quick-links > li > a {
+  color: white;
+}
+
+ li > a:hover{
+	color: #B24EC6;
+	text-decoration:none;
+}
+.icon-inline{
+	margin:0px;
+}
+
+.panel h3 {
+	color:#fff;
+}
+
+footer ul {
+	padding-left:20px;
+}
+.panel, .well {
+	border-radius:5px;
+}
+.panel-default>.panel-heading {
+	border-radius: 5px 5px 0 0 ;
+	background-color:#B24EC6;
+
+}
+.panel-body, .well {
+	background-color:#fff;
+	border-radius:5px;
+}
+#wrap {
+	min-height:400px;
+}
+#carousel-1 img { 
+	width:100%;
+	height:300px;
+}
+#carousel-1, #carousel-example-generic {
+	padding:15px;	
+	border-radius:5px;
+}
+.carousel-container {
+	background-color:#fff;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+.twitter-timeline {
+
+} 
+.timeline-footer {
+	background-color:#B24EC6;
+}
+#twitter-container {
+	background-color:#fff;	
+	margin-bottom:20px;
+	padding:15px;
+	border-radius:5px;		
+}
+#side-bar-title {
+	margin-top:0px;
+}
+
+
+
+

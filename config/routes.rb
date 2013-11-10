@@ -1,4 +1,13 @@
 Uberschnap::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/help"
+  get "static_pages/private_party"
+  get "static_pages/wedding"
+  get "static_pages/corporate_event"
+  get "static_pages/about"
+  get "static_pages/bookings"
+  get "static_pages/photo_booth"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

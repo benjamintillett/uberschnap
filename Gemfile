@@ -16,6 +16,8 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.0.2'
+gem 'bootstrap-sass', '~> 3.0.2.0'
+gem 'font-awesome-sass'
 
 group :test do
   gem 'capybara', '1.1.2'
