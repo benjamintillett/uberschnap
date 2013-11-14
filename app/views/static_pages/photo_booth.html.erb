@@ -5,14 +5,12 @@
 	<div class="sidebar-nav static">
 	<div class="well" style="width:100%; padding:15px;">
 		<ul class="nav nav-list"> 
-		  <li class="nav-header"><h4 id="side-bar-title">Photo Booths</h4></li>        
-		  <li><a href="index"><i class="icon-home"></i> Dashboard</a></li>
-		  <li><a href="#"><i class="icon-envelope"></i> Messages </a></li>
-		  <li><a href="#"><i class="icon-comment"></i> Comments</a></li>
-		  <li class="active"><a href="#"><i class="icon-user"></i> Members</a></li>
-		  <li class="divider"></li>
-		  <li><a href="#"><i class="icon-comment"></i> Settings</a></li>
-		  <li><a href="#"><i class="icon-share"></i> Logout</a></li>
+		  <li class="nav-header"><h5 id="side-bar-title"><a href="#home" data-toggle="tab">PHOTOBOOTH</a></h5></li>        
+		  <li><a href="#unlimited" data-toggle="tab"> unlimited instant photos</a></li>
+		  <li><a href="#touch" data-toggle="tab"> touchscreen </a></li>
+		  <li><a href="#social" data-toggle="tab">social upload</a></li>
+		  <li><a href="#personalise-back" data-toggle="tab">personalise everything</a></li>
+		  <li><a href="#custom-booth" data-toggle="tab">customize booth</a></li>
 		</ul>
 	</div>
 	</div>
@@ -20,12 +18,11 @@
 
 <div class="col-md-6 test">
 	<div class="panel panel-default" id="info-panel">
-		<div class="panel-heading">
-			<h3 class="panel-title">UBERSCHANP PHOTOBOOTH</h3>
-		</div>
-		<div class="panel-body">
-			Uberschnap are the flexible Photobooth Company.  We offer retro photobooths, we have smaller pods which can fit into small spaces, and we can custom build you a booth to almost fit into any type of housing.; Some of the more adventurous Photobooths to date have been a Confessions Booth, a Beach Shack and a Black Cab<br><br>To help people relax we can offer a curtain on the booth door,  a dress-up box, and props.<br><br>At our events 2 Uberschnappers help guide use of the booth during your event using a state of the art touch screen on the outside of the booth. <br><br>At your event guest can have unlimited prints of their 4 passport photos instantly. And of course we save copies for you.
-		</div>
+		<div class="tab-content">
+
+				<%= render "photobooth_tabs" %>
+	
+		</div>		
 	</div>   
 	<!-- carosel -->	
 
