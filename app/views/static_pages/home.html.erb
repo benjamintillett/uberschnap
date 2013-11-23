@@ -1,8 +1,4 @@
 
-
-
-
-
 <div class="col-md-6 col-md-offset-2  test">
 	<div class="panel panel-default" id="info-panel">
 		<div class="panel-heading">
@@ -18,52 +14,7 @@
 
 
 <!-- carosel -->	
-<div class="col-sm-4">
-<div class="carousel-container">
-<div id="carousel-example-generic" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/2013_09_03_154851.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/2013_09_10_180616.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
-  </div>
-
-  <!-- Controls -->
-  <a class="carousel-control"  href="#carousel-example-generic" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="carousel-control" id="carasoul-control-right" href="#carousel-example-generic" data-slide="next">
-    <span class="icon-next"></span>
-  </a>
-</div>
-</div>
-<div id="twitter-container">
-<a class="twitter-timeline" data-theme="light" data-chrome="" href="https://twitter.com/benjamintillett" data-widget-id="399508093085564928">Tweets by @benjamintillett</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
-
-
-
-
-
-</div>
+<%= render "passport_carousel" %>
 
 <!-- end carosel -->
 

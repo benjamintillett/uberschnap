@@ -6,7 +6,7 @@
 	<div class="well" style="width:100%; padding:15px;">
 		<ul class="nav nav-list"> 
 		  <li class="nav-header"><h5 id="side-bar-title"><a href="#home" data-toggle="tab">PHOTOBOOTH</a></h5></li>        
-		  <li><a href="#unlimited" data-toggle="tab"> unlimited instant photos</a></li>
+		  <li><a href="#unlimited" id="cat" data-toggle="tab"> unlimited instant photos</a></li>
 		  <li><a href="#touch" data-toggle="tab"> touchscreen </a></li>
 		  <li><a href="#social" data-toggle="tab">social upload</a></li>
 		  <li><a href="#personalise-back" data-toggle="tab">personalise everything</a></li>
@@ -24,104 +24,12 @@
 	
 		</div>		
 	</div>   
-	<!-- carosel -->	
-
-	<div class="carousel-container">
-	<div id="carousel-1" class="carousel slide">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	  </ol>
-
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner">
-		<div class="item active">
-		  <img src="https://s3.amazonaws.com/uberschnapbucket1/395933_10150979667676003_1630448132_n.jpg" alt="...">
-		  <div class="carousel-caption">
-			...
-		  </div>
-		</div>
-		<div class="item">
-		  <img src="https://s3.amazonaws.com/uberschnapbucket1/432164_10151957021895517_408947264_n.jpg" alt="...">
-		  <div class="carousel-caption">
-			...
-		  </div>
-		</div>
-		<div class="item">
-		  <img src="https://s3.amazonaws.com/uberschnapbucket1/526523_10152684899201002_479001448_n.jpg" alt="...">
-		  <div class="carousel-caption">
-			...
-		  </div>
-		</div>
-		<div class="item">
-		  <img src="https://s3.amazonaws.com/uberschnapbucket1/557367_10100676502018309_686022454_n.jpg" alt="...">
-		  <div class="carousel-caption">
-			Do you want to add captions?
-		  </div>
-		</div>
-	  </div>
-
-	  <!-- Controls -->
-	  <a class="carousel-control"  href="#carousel-1" data-slide="prev">
-		<span class="icon-prev"></span>
-	  </a>
-	  <a class="carousel-control" id="carasoul-control-right" href="#carousel-1" data-slide="next">
-		<span class="icon-next"></span>
-	  </a>
-	</div>
-	</div>
-
-
-	<!-- end carosel -->
+<%= render "photobooth_carousel" %>
 </div>
 
 
-<!-- carosel -->	
-<div class="col-sm-4">
-<div class="carousel-container">
-<div id="carousel-example-generic" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/2013_09_03_154851.jpg" alt="...">
-      <div class="carousel-caption">
-        hfdjkhsfbjhadsbfodhbv
-      </div>
-    </div>
-    <div class="item">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/2013_09_10_180616.jpg" alt="...">
-      <div class="carousel-caption">
-        dhfbcashdfbjksabfakjsb
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="carousel-control"  href="#carousel-example-generic" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="carousel-control" id="carasoul-control-right" href="#carousel-example-generic" data-slide="next">
-    <span class="icon-next"></span>
-  </a>
-</div>
-</div>
-<div id="twitter-container">
-<a class="twitter-timeline" data-theme="dark" data-chrome="" href="https://twitter.com/benjamintillett" data-widget-id="399508093085564928">Tweets by @benjamintillett</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
-
-</div>
-
-<!-- end carosel -->
+<%= render "passport_carousel" %>
 
 
 
