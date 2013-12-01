@@ -14,12 +14,8 @@ left: auto;
 
 body {
 	font-size:13px;
-	background: url("https://s3.amazonaws.com/uberschnapbucket1/Uberschnap-04.png") no-repeat center center fixed;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-	background-color: #eBeBeB;
+
+	background-color: #eee;
 	font-family: “Avant Garde”, Avantgarde, “Century Gothic”, CenturyGothic, “AppleGothic”, sans-serif;
 	margin-top:120px;
 
@@ -140,7 +136,7 @@ h5 a {
 	color:#000;
 }
 .navbar-right > li > a {
-	padding:33px 15px;
+	padding:33px 10px;
 }
 .navbar-right .fa {
 	margin:30px 15px;
@@ -150,4 +146,80 @@ div.collapse > ul.nav > li > a:hover {
 	color: #B24EC6;
 }
 
+/* gallery */
 
+body {
+    font-family: Arial;
+}
+ 
+.portfolioFilter a { 
+    margin-right: 10px; 
+    color:#666;
+    text-decoration:none;
+}
+ 
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+ 
+.portfolioContainer > div > img {
+    margin:5px;
+}
+ 
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/* filter labels */
+
+.label-primary {
+	background-color:black;
+	color:white;
+}
+.portfolioFilter a {
+	margin-right: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.current {
+	background-color:#B24EC6;
+}
+.party {
+	width:160px;
+}
+.photobooth_images {
+	width:320px;
+}
+.wedding {
+	width:160px;
+}
+.portfolioContainer > div {
+margin: 5px;
+}
+
+.portfolioContainer {
+	margin:auto;
+}

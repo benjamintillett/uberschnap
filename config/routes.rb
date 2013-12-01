@@ -7,6 +7,7 @@ Uberschnap::Application.routes.draw do
   get "static_pages/about"
   get "static_pages/bookings"
   get "static_pages/photo_booth"
+  get "static_pages/gallery"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

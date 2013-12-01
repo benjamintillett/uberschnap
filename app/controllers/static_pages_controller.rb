@@ -23,6 +23,9 @@ class StaticPagesController < ApplicationController
   def photo_booth
   end
   
+  def gallery
+  end
+  
   
   
 end

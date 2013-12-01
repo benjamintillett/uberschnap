@@ -1,5 +1,5 @@
-<% @unknown_images = ["2013_09_10_200435.jpg", "2013_09_12_205845.jpg", "2013_09_13_011617.jpg", "2013_09_13_222736.jpg", "2013_09_12_154715.jpg", "2013_09_12_212108.jpg", "2013_09_13_015110.jpg", "2013_09_13_224914.jpg", "2013_09_12_175708.jpg", "2013_09_12_213027.jpg", "2013_09_13_165725.jpg", "2013_09_13_232605.jpg", "2013_09_12_202948.jpg", "2013_09_12_233344.jpg", "2013_09_13_170200.jpg"]  %>
-<% @wedding_images = ["20130928_172918+copy.jpg", "20130928_181515+copy.jpg", "20130928_231840+copy.jpg", "20130928_235701+copy.jpg", "20130929_004718+copy.jpg", "20130928_174019+copy.jpg", "20130928_220614+copy.jpg", "20130928_232957+copy.jpg", "20130928_235838+copy.jpg", "20130928_175204+copy.jpg", "20130928_222045+copy.jpg", "20130928_233731+copy.jpg", "20130929_001307+copy.jpg", "20130928_175848+copy.jpg", "20130928_225806+copy.jpg", "20130928_235453+copy.jpg", "20130929_003104+copy.jpg"] %>
+<% @unknown_images = ["http://imgur.com/YVsthxL", "http://imgur.com/epErFQN", "http://imgur.com/Dhjg9Nt", "http://imgur.com/MFJ2Jtq", "http://imgur.com/OKW9sGR.http://imgur.com/XbWXkgV", "http://imgur.com/JC58Ddl", "http://imgur.com/8JPc40J", "http://imgur.com/VagGxI8", "http://imgur.com/XXhpIE9", "http://imgur.com/K3aWDfo", "http://imgur.com/DK4NF95", "http://imgur.com/JZcUHql", "http://imgur.com/mTfrirR", "http://imgur.com/EGX2UXt"]  %>
+<% @wedding_images = ["http://imgur.com/tMQLnMN", "http://imgur.com/I2HttQC", "http://imgur.com/LnR1IMO", "http://imgur.com/KI8dS2I", "http://imgur.com/aEhJ2v8", "http://imgur.com/72lmu1Z", "http://imgur.com/LEnzBgV", "http://imgur.com/g88OXRo", "http://imgur.com/1xy0ovn", "http://imgur.com/HD2eEHd", "http://imgur.com/kaawSJC", "http://imgur.com/qzhlvNO", "http://imgur.com/YhXrR0L", "http://imgur.com/Tk3ALPm", "http://imgur.com/3wuHMfP", "http://imgur.com/GOIoFWH", "http://imgur.com/wDabgp7"] %>
 
 
 
@@ -17,14 +17,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/unknown+images/2013_09_12_213027.jpg" alt="http://placehold.it/272x407">
+      <img src="http://i1370.photobucket.com/albums/ag278/benjamin_tillett/Unknown/2013_09_12_205845_zpsf7d7f073.jpg" alt="http://placehold.it/272x407">
       <div class="carousel-caption">
         ...
       </div>
     </div>
     <% @unknown_images.each do |image| %>
     <div class="item">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/unknown+images/<%= image %>" alt="http://placehold.it/272x407">
+      <img src="<%= image %>.jpg" alt="http://placehold.it/272x407">
       <div class="carousel-caption">
         ...
       </div>
@@ -32,7 +32,7 @@
     <% end %>
     <% @wedding_images.each do |image| %>
     <div class="item">
-      <img src="https://s3.amazonaws.com/uberschnapbucket1/wedding_images/<%= image %>" alt="http://placehold.it/272x407">
+      <img src="<%= image %>.jpg" alt="http://placehold.it/272x407">
       <div class="carousel-caption">
         ...
       </div>
