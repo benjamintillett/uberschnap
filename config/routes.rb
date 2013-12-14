@@ -9,6 +9,8 @@ Uberschnap::Application.routes.draw do
   get "static_pages/photo_booth"
   get "static_pages/gallery"
   
+  resources :emails
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
