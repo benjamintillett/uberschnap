@@ -1,1 +1,29 @@
-fdsjfkjf
+
+<div class="row" id="bookings-form">
+	<div class="col-md-6 col-md-offset-3" >
+		<h1>Quote me please</h1>
+		<%= form_for(@email) do |f| %>
+	
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+	
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+	
+			<%= f.label :event_type %>
+			<%= f.select( :event_type, [['Party','Party' ], ['Wedding', 'Wedding']]) %>
+	
+			<%= f.label :event_date %><br>
+			<%= f.date_select :date, :order => [:day, :month,:year] %>
+
+			<%= f.label :event_location %>
+			<%= f.text_field :event_location %>
+			
+      <%= f.label :message %>
+      <%= f.text_area :message, size: "100x10" %>
+			<br>
+      <%= f.submit "Send", class: "btn btn-large btn-primary" %>
+      <br>
+		<% end %>
+	</div>
+</div>

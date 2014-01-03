@@ -11,6 +11,8 @@ Uberschnap::Application.routes.draw do
   
   resources :emails
   
+  match "/bookings", to: "emails#new"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
