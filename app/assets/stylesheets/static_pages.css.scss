@@ -13,7 +13,7 @@ left: auto;
 }
 
 body {
-	font-size:13px;
+	font-size:14px;
 
 	background-color: #eee;
 	font-family: “Avant Garde”, Avantgarde, “Century Gothic”, CenturyGothic, “AppleGothic”, sans-serif;
@@ -243,16 +243,18 @@ hr.footer-divider {
 
 /* NAVBAR COLLAPSE */
 
-@media (max-width: 1130px) {
+@media (max-width: 1190px) {
     .navbar-header {
         float: none;
     }
     .navbar-toggle {
         display: block;
+        margin:15px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+
     }
     .navbar-collapse.collapse {
         display: none!important;
@@ -268,6 +270,9 @@ hr.footer-divider {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+  	.navbar-collapse.in {
+  		overflow-y:auto;
+}
 }	
 
 	
