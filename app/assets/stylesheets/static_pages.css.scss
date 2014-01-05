@@ -108,7 +108,7 @@ footer ul {
 }
 #carousel-1 img { 
 	width:100%;
-	height:300px;
+
 }
 #carousel-1, #carousel-example-generic {
 	padding:15px;	
@@ -286,6 +286,9 @@ hr.footer-divider {
 		h5 {
 			font-size:18px;
 		}
+		.container {
+			width:95%;
+		}
 }
 
 .item > img {
@@ -293,8 +296,8 @@ hr.footer-divider {
 }
 
 /* make font larger for iphones */
-@media screen and (device-aspect-ratio: 40/71) { body { font-size:22px; } }
-@media screen and (device-aspect-ratio: 2/3) { body { font-size:22px; } }
+@media screen and (device-aspect-ratio: 40/71) { body { font-size:28px; } }
+@media screen and (device-aspect-ratio: 2/3) { body { font-size:28px; } }
 
 
 }	
