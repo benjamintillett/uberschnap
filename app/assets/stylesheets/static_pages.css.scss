@@ -244,6 +244,7 @@ hr.footer-divider {
 /* NAVBAR COLLAPSE */
 
 @media (max-width: 1190px) {
+
     .navbar-header {
         float: none;
     }
@@ -271,8 +272,25 @@ hr.footer-divider {
         padding-bottom: 10px;
     }
   	.navbar-collapse.in {
-  		overflow-y:auto;
+  			overflow-y:auto;
+
+		.fa {
+				display:none;
+		}
 }
+
+@media (max-width: 990px) {
+		body {
+			font-size:18px;
+		}
+}
+
+.item > img {
+	width:100%;
+}
+
+
+
 }	
 
 	
