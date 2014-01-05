@@ -289,6 +289,9 @@ hr.footer-divider {
 	width:100%;
 }
 
+/* make font larger for iphones */
+@media screen and (device-aspect-ratio: 40/71) { body { font-size:22px; }
+@media screen and (device-aspect-ratio: 2/3) { body { font-size:22px; }
 
 
 }	
