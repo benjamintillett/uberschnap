@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
+
+
 #carasoul-control-right {
 right: 0;
 left: auto;
@@ -13,9 +15,13 @@ left: auto;
 }
 
 body {
-	font-size:14px;
-
-	background-color: #eee;
+	font-size:13px;
+	background:url("http://i.imgur.com/Vw56MIy.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* background-color: #eee; */
 	font-family: “Avant Garde”, Avantgarde, “Century Gothic”, CenturyGothic, “AppleGothic”, sans-serif;
 	margin-top:120px;
 
@@ -77,7 +83,7 @@ footer h4 {
 }
 
  li > a:hover{
-	color: #B24EC6;
+	color: #34DDDD;
 	text-decoration:none;
 }
 .icon-inline{
@@ -143,7 +149,7 @@ h5 a {
 }
 div.collapse > ul.nav > li > a:hover {
 	text-decoration:none;
-	color: #B24EC6;
+	color: #34dddd;
 }
 
 /* gallery */
@@ -285,9 +291,6 @@ hr.footer-divider {
 		}
 		h5 {
 			font-size:18px;
-		}
-		.container {
-			width:95%;
 		}
 }
 
