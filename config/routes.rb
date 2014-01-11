@@ -1,4 +1,8 @@
 Uberschnap::Application.routes.draw do
+  get "users/new"
+	
+	match '/add_user', to: 'users#new'
+	
   get "static_pages/home"
   get "static_pages/help"
   get "static_pages/private_party"
