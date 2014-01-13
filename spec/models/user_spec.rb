@@ -10,11 +10,12 @@
 #  password_digest :string(255)
 #
 
+
 require 'spec_helper'
 
 describe User do
-
-	before { @user = User.new(name: "johns wedding", email: "example@wedding.com", password: "foobar", password_confirmation: "foobar") }
+	before { @images = "http://imgur.com/YVsthxL,http://imgur.com/epErFQN,http://imgur.com/Dhjg9Nt,http://imgur.com/MFJ2Jtq,http://imgur.com/OKW9sGR,http://imgur.com/XbWXkgV,http://imgur.com/JC58Ddl,http://imgur.com/8JPc40J,http://imgur.com/VagGxI8,http://imgur.com/XXhpIE9,http://imgur.com/K3aWDfo,http://imgur.com/DK4NF95,http://imgur.com/JZcUHql,http://imgur.com/mTfrirR,http://imgur.com/EGX2UXt" }
+	before { @user = User.new(name: "johns wedding", email: "example@wedding.com", password: "foobar", password_confirmation: "foobar", images: @images) }
 	
 	subject { @user } 
 	
@@ -24,8 +25,28 @@ describe User do
 	it { should respond_to(:password) }
 	it { should respond_to(:password_confirmation) }
 	it { should respond_to(:authenticate) }
+	it { should respond_to(:images) }
+	it { should respond_to(:image_array) }
 	
 	it { should be_valid } 
+	
+	
+	
+	describe "image array" do 
+		its(:image_array) { should be_a Array } 
+	end
+		
+	describe "when image list is not present" do 
+		before { @user.images = " " } 
+		it { should_not be_valid }
+	end
+	
+	describe "when image list is not valid" do 
+		before { @user.images = "WEE" } 
+		it { should_not be_valid } 
+	end
+	
+	
 	
 	describe "when name is not present" do 
 		before { @user.name = " " }

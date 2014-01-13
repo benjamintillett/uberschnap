@@ -54,7 +54,7 @@ margin-top:0px;
 }
 
 a {
- color: #B24EC6;
+ color: #34DDDD;
 }
 .nav-header h3 { 
 	padding-left:10px;
@@ -213,6 +213,10 @@ body {
 .current {
 	background-color:#B24EC6;
 }
+.download {
+	background-color:#34DDDD;
+	color:#000;
+}
 .party {
 	width:160px;
 }
@@ -222,12 +226,20 @@ body {
 .wedding {
 	width:160px;
 }
+.user-images {
+	width:320px;
+}
+
+
 .portfolioContainer > div {
 	margin: 5px;
 }
 
 .portfolioContainer {
 	margin:auto;
+}
+.portfolioContainer img  {
+	margin-bottom:5px;
 }
 
 
@@ -302,8 +314,23 @@ hr.footer-divider {
 @media screen and (device-aspect-ratio: 40/71) { body { font-size:28px; } }
 @media screen and (device-aspect-ratio: 2/3) { body { font-size:28px; } }
 
-
 }	
 
-	
+/* forms */
+
+form { 
+	margin-bottom:60px;
+}
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}	
 	

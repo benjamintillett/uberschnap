@@ -14,6 +14,7 @@ Uberschnap::Application.routes.draw do
   get "static_pages/gallery"
   
   resources :emails
+  resources :users
   
   match "/bookings", to: "emails#new"
   

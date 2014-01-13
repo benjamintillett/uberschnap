@@ -1,0 +1,56 @@
+
+<div class="portfolioFilter">
+	<h4> 
+    <a href="#" data-filter="*" class="current label label-primary"><%= @user.name %></a>
+
+ </h4>
+</div>
+ 
+<div class="portfolioContainer">
+
+    <% @user.image_array.each_with_index do |image, index| %>
+    <div class="user-images">
+      <a href="<%= image %>.jpg" data-lightbox="images" title="My caption"><img class="user-images" src="<%= image %>.jpg" alt="http://placehold.it/272x407"></a>
+    	<br>
+    	<a href="<%= image %>.jpg" class="download label label-primary" download="<%= @user.name + index.to_s %>">Donwload Image</a>
+    </div>    
+    <% end %> 
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+	$(window).load(function(){
+			var $container = $('.portfolioContainer');
+			$container.isotope({
+					filter: '*',
+					sortBy : 'random',
+					animationOptions: {
+							duration: 750,
+							easing: 'linear',
+							queue: false
+					}
+			});
+
+			
+			$('.portfolioFilter a').click(function(){
+					$('.portfolioFilter .current').removeClass('current');
+					$(this).addClass('current');
+ 
+					var selector = $(this).attr('data-filter');
+					$container.isotope({
+							filter: selector,
+							animationOptions: {
+									duration: 750,
+									easing: 'linear',
+									queue: false
+							}
+					 });
+					 return false;
+			}); 
+	});	 
+ 
+</script>
