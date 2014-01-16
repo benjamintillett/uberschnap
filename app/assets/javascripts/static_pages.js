@@ -12,8 +12,7 @@ $(document).ready(function(){
     }, 2500);
     
     $(".nav-list > li > a, #side-bar-title > a").click(function(){
-  		$(".nav-list > li > a").css("color","#B24EC6");
-  		$("#side-bar-title > a").css("color","#B24EC6");
+  		$(".nav-list > li > a").css("color","#23cccc");
   		$(this).css("color","black");
 		});
 });
