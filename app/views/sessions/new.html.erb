@@ -1,0 +1,21 @@
+<title>Sign in</title>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-2">
+		<h1>Sign in</h1>
+		<%= form_for(:session, url: { action: 'create' } ) do |f| %>
+	
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+		
+			<%= f.label :password %>
+			<%= f.password_field :password %>
+		
+			<%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+			<br><br>Wan't a booth at your event <%= link_to("contact us now", bookings_path) %>
+		<% end %>
+		<div> 
+		
+		</div>
+	</div>
+</div>

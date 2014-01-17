@@ -1,7 +1,7 @@
 Uberschnap::Application.routes.draw do
   get "users/new"
 	
-	match '/add_user', to: 'users#new'
+
 	
   get "static_pages/home"
   get "static_pages/help"
@@ -15,9 +15,15 @@ Uberschnap::Application.routes.draw do
   
   resources :emails
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   
+
   match "/bookings", to: "emails#new"
-  
+	match '/add_user', to: 'users#new'
+	
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

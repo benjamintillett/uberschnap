@@ -1,7 +1,7 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
+
 
 
 
@@ -54,8 +54,13 @@ margin-top:0px;
 }
 
 a {
- color: #34DDDD;
+ color: #12BBBB;
 }
+a:hover {
+	 text-decoration:none;
+	 color:#B24EC6;
+}
+
 .nav-header h3 { 
 	padding-left:10px;
 	margin-top:10px	
@@ -83,7 +88,7 @@ footer h4 {
 }
 
  li > a:hover{
-	color: #34DDDD;
+	color: #12BBBB;
 	text-decoration:none;
 }
 .icon-inline{
@@ -149,14 +154,11 @@ h5 a {
 }
 div.collapse > ul.nav > li > a:hover {
 	text-decoration:none;
-	color: #34dddd;
+	color: #12BBBB;
 }
 
 /* gallery */
 
-body {
-    font-family: Arial;
-}
  
 .portfolioFilter a { 
     margin-right: 10px; 
@@ -214,7 +216,7 @@ body {
 	background-color:#B24EC6;
 }
 .download {
-	background-color:#34DDDD;
+	background-color:#12BBBB;
 	color:#000;
 }
 .party {
@@ -333,5 +335,18 @@ form {
   @extend .control-group;
   @extend .error;
 }
-	
+
+#signin-button {
+	background-color:#12bbbb;
+	color:#fff;
+	text-align:center;
+	border-radius:5px;
+	padding:8px;
+	margin-bottom:20px;
+	font-size:1.2em;
+	font-weight:900;
+	a {
+		color:#fff;
+	}
+}
 	
