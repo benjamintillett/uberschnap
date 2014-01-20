@@ -70,7 +70,7 @@ a:hover {
     margin:15px;
 }
 footer {
-	background-color:#000;
+	background-color:#222;
 	color:#fff;
 }
 footer h4 {
@@ -144,7 +144,7 @@ footer ul {
 	margin-top:0px;
 }
 h5 a {
-	color:#000;
+	color:#fff;
 }
 .navbar-right > li > a {
 	padding:33px 10px;
@@ -247,7 +247,7 @@ div.collapse > ul.nav > li > a:hover {
 
 
 
-#clients > img {
+#clients img {
 	width:90px;
 	margin:15px;
 }
@@ -349,4 +349,10 @@ form {
 		color:#fff;
 	}
 }
-	
+.panel-body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}	
+
+.sidebar-nav > div {
+	background-color:#222; 
+}

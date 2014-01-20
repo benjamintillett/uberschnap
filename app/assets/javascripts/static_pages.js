@@ -13,6 +13,6 @@ $(document).ready(function(){
     
     $(".nav-list > li > a, #side-bar-title > a").click(function(){
   		$(".nav-list > li > a").css("color","#23cccc");
-  		$(this).css("color","black");
+  		$(this).css("color","#B24EC6");
 		});
 });

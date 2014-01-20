@@ -7,7 +7,18 @@ describe "Authentication" do
 
 	describe "authorization" do
 		
-		describe"for non-signed-in users" do 
+		describe "as wrong user" do 
+			let(:user) { FactoryGirl.create(:user) }
+			let(:wrong_user) { FactoryGirl.create(:user, email: "wrong@example.com") }
+			before { sign_in user }
+			
+			describe "visiting Users#show page" do 
+				before { visit user_path(wrong_user)}
+				it { should_not have_selector('h4', text: user.name) }
+				it { should have_selector('h1', text: "Sign in") }
+			end
+		end 
+		describe "for non-signed-in users" do 
 			let(:user) { FactoryGirl.create(:user) }
 			
 			describe "in the Users controller" do 
